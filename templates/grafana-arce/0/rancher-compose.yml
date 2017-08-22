@@ -1,0 +1,46 @@
+.catalog:
+  name: "Grafana-Arce"
+  version: "0.1"
+  description: "Grafana with plugins"
+  uuid: # Unique identifier to be used for upgrades. Please see note.
+  minimum_rancher_version: # The minimum version of Rancher that supports the template
+  questions: #Used to request user input for configuration options
+    - variable: http_port
+      description: "http port to access Grafana"
+      label: "Http Port"
+      required: true
+      default: "3000"
+      type: "int"
+    - variable: admin_username
+      description: "Grafana admin username"
+      label: "Admin Username"
+      required: true
+      default: "admin"
+      type: "string"
+    - variable: admin_password
+      description: "Grafana admin password"
+      label: "Admin Password"
+      required: true
+      default: "password"
+      type: "string"
+    - variable: secret_key
+      description: "Signing secret key"
+      label: "Secret Key"
+      required: true
+      default: "su2Tong2zoocie"
+      type: "string"
+  - variable: "plugins"
+    type: "multiline"
+    label: "List of Plugins"
+    description: |
+      List of plugins in the format <plugin_name>[:<version>]
+      one entry per line.
+    default: |
+      briangann-gauge-panel
+      grafana-piechart-panel
+      jdbranham-diagram-panel
+      mtanda-heatmap-epoch-panel
+      mtanda-histogram-panel 
+
+grafana:
+
