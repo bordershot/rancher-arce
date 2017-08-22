@@ -6,5 +6,5 @@ grafana:
         GF_SECURITY_ADMIN_USER: ${admin_username}
         GF_SECURITY_ADMIN_PASSWORD: ${admin_password}
         GF_SECURITY_SECRET_KEY: ${secret_key}
-	GF_INSTALL_PLUGINS: ${plugins}
+        GF_INSTALL_PLUGINS: ${plugins}
 
