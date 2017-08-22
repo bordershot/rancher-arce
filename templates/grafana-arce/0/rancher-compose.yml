@@ -29,18 +29,18 @@
       required: true
       default: "su2Tong2zoocie"
       type: "string"
-  - variable: "plugins"
-    type: "multiline"
-    label: "List of Plugins"
-    description: |
-      List of plugins in the format <plugin_name>[:<version>]
-      one entry per line.
-    default: |
-      briangann-gauge-panel
-      grafana-piechart-panel
-      jdbranham-diagram-panel
-      mtanda-heatmap-epoch-panel
-      mtanda-histogram-panel 
+    - variable: "plugins"
+      type: "multiline"
+      label: "List of Plugins"
+      description: |
+        List of plugins in the format <plugin_name>[:<version>]
+        one entry per line.
+      default: |
+        briangann-gauge-panel
+        grafana-piechart-panel
+        jdbranham-diagram-panel
+        mtanda-heatmap-epoch-panel
+        mtanda-histogram-panel 
 
 grafana:
 
