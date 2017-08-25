@@ -7,4 +7,7 @@ grafana:
         GF_SECURITY_ADMIN_PASSWORD: ${admin_password}
         GF_SECURITY_SECRET_KEY: ${secret_key}
         GF_INSTALL_PLUGINS: ${plugins}
-
+    external_links:
+        - ${database_link}:database
+#    volumes:
+#        - ${grafana_home}:/var/lib/grafana
