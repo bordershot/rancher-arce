@@ -29,12 +29,40 @@
       required: true
       default: "su2Tong2zoocie"
       type: "string"
+    - variable: "database_link"
+      label: "Database"
+      description: |
+        Service link to the database. This will be mapped to the container as 'database'
+      type: "service"
+      required: false
+    - variable: "proxy_name"
+      label: "Proxy name"
+      description: |
+        When behind a proxy, specify the name through which clients will connect to Grafana. For example: grafana.mycompany.com
+      type: "string"
+      required: false
+    - variable: "proxy_port"
+      label: "Proxy port"
+      description: |
+        When behind a proxy, specify the port through which clients will connect to Grafana
+      type: "int"
+      required: false
+    - variable: "proxy_scheme"
+      label: "Proxy scheme"
+      description: |
+        When behind a proxy, specify the protocol clients will use to connect to Grafana
+      type: "enum"
+      options:
+        - http
+        - https
+      default: http
+      required: false
     - variable: "plugins"
-      type: "multiline"
+      type: "string"
       label: "List of Plugins"
       description: |
-        List of plugins in the format <plugin_name>[:<version>]
-        one entry per line.
+        List of plugins in the format <plugin_name>,<plugin_name>
+        all entries on a single line.
       default: |
         briangann-gauge-panel
         grafana-piechart-panel
