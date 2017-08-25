@@ -9,5 +9,6 @@ grafana:
         GF_INSTALL_PLUGINS: ${plugins}
     external_links:
         - ${database_link}:database
+        - ${redis_link}:redis
 #    volumes:
 #        - ${grafana_home}:/var/lib/grafana
