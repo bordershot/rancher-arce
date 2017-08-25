@@ -8,7 +8,7 @@
     - variable: password
       description: "Redis Password"
       label: "Redis Password"
-      required: "false"
+      required: false
       default: "redis"
       type: "string"
 
