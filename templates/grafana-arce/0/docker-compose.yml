@@ -15,9 +15,9 @@ grafana:
         GF_DATABASE_USER: "grafana"
         GF_DATABASE_PASSWORD: "grafana"
 #        GF_SERVER_PROTOCOL: ${proxy_scheme}
-        GF_SERVER_PROTOCOL: "http"
+#        GF_SERVER_PROTOCOL: "http"
         GF_SERVER_DOMAIN: ${proxy_name}
-        GF_SERVER_HTTP_PORT: ${proxy_port}
+#        GF_SERVER_HTTP_PORT: ${proxy_port}
     external_links:
         - ${database_link}:database
         - ${redis_link}:redis
