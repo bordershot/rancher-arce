@@ -5,12 +5,12 @@
   uuid: # Unique identifier to be used for upgrades. Please see note.
   minimum_rancher_version: # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options
-    - variable: http_port
-      description: "http port to access Grafana"
-      label: "Http Port"
-      required: true
-      default: "3000"
-      type: "int"
+#    - variable: http_port
+#      description: "http port to access Grafana"
+#      label: "Http Port"
+#      required: true
+#      default: "3000"
+#      type: "int"
     - variable: admin_username
       description: "Grafana admin username"
       label: "Admin Username"
