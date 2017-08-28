@@ -7,6 +7,13 @@ grafana:
         GF_SECURITY_ADMIN_PASSWORD: ${admin_password}
         GF_SECURITY_SECRET_KEY: ${secret_key}
         GF_INSTALL_PLUGINS: ${plugins}
+        GF_SESSION_PROVIDER: "redis"
+        GF_SESSION_PROVIDER_CONFIG: "addr=redis:6379,pool_size=100,db=grafana"
+        GF_DATABASE_TYPE: "postgres"
+        GF_DATABASE_HOST: "database:5432"
+        GF_DATABASE_NAME: "grafana"
+        GF_DATABASE_USER: "grafana"
+        GF_DATABASE_PASSWORD: "grafana"
     external_links:
         - ${database_link}:database
         - ${redis_link}:redis
