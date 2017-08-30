@@ -1,0 +1,6 @@
+apache:
+    image: httpd:latest
+    volumes:
+        - type: bind
+          source: ${html}
+          target: /usr/local/apache2/htdocs/
