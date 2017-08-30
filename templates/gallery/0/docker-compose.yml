@@ -3,4 +3,4 @@ apache:
     volumes:
         - type: bind
           source: ${html}
-          target: /usr/local/apache2/htdocs/
+          target: "/usr/local/apache2/htdocs/"
