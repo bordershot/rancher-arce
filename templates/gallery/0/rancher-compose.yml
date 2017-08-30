@@ -10,3 +10,5 @@
       label: "htdocs directory"
       required: true
       type: "string"
+
+apache:
