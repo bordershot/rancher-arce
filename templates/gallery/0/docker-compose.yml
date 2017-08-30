@@ -2,5 +2,5 @@ apache:
     image: httpd:latest
     volumes:
         - ${html}:/usr/local/apache2/htdocs/
-        - /sonic/frontdoor/FrontDoor:/sonic/frontdoor/FrontDoor
-        - /sonic/frontdoor/Frontyard:/sonic/frontdoor/Frontyard
+        - /net/tardis/sonic/frontdoor/FrontDoor:/sonic/frontdoor/FrontDoor
+        - /net/tardis/sonic/frontdoor/Frontyard:/sonic/frontdoor/Frontyard
