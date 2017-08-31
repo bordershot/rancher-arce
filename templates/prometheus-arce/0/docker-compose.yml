@@ -54,8 +54,8 @@ graf-db:
 grafana:
     tty: true
     image: grafana/grafana:4.2.0
-    ports:
-      - 3000:3000
+#    ports:
+#      - 3000:3000
     labels:
       io.rancher.sidekicks: graf-db
     volumes_from:
