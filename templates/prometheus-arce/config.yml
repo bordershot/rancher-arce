@@ -1,0 +1,8 @@
+name: "Prometheus-Arce"
+description: |
+  "Prometheus and fixes for hostname"
+version: "0.1"
+category: # Category to be used for searching catalog entries
+maintainer: # The maintainer of the catalog entry
+license: # The license
+projectURL: "https://github.com/bordershot/rancher-arce"
