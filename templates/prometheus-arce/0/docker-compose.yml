@@ -71,8 +71,9 @@ prometheus-rancher-exporter:
     labels:
       io.rancher.container.create_agent: true
       io.rancher.container.agent.role: environment
+    user: root
     volumes:
-      - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/ca.crt"
+      - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/ca.crt:ro"
     entrypoint: "apk add --no-cache ca-certificates && update-ca-certificates && /bin/rancher_exporter"
     image: infinityworks/prometheus-rancher-exporter:v0.22.52
 
