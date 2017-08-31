@@ -11,6 +11,12 @@
     default: "0.0.0.0"
     required: false
     type: "string"
+  - variable: "CA_CERTIFICATE"
+    label: "Certificate Authority"
+    description: "Path to custom CA cert file"
+    default: ""
+    required: false
+    type: "string"
 
 prometheus:
   scale: 1
