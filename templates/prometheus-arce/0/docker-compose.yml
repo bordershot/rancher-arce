@@ -74,6 +74,6 @@ prometheus-rancher-exporter:
     user: root
     volumes:
       - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/ca.crt:ro"
-    entrypoint: "update-ca-certificates --fresh && /bin/rancher_exporter"
+    entrypoint: mkdir -p /etc/ssl/certs/ && update-ca-certificates --fresh && /bin/rancher_exporter
     image: infinityworks/prometheus-rancher-exporter:v0.22.52
 
