@@ -67,7 +67,7 @@ grafana:
 prometheus-rancher-exporter:
     tty: true
     extra_hosts:
-      - "rancher.arce.local:192.168.37.191"
+      - "rancher.arce.local:${RANCHER_SERVER}"
     labels:
       io.rancher.container.create_agent: true
       io.rancher.container.agent.role: environment
