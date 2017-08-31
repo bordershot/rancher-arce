@@ -73,7 +73,7 @@ prometheus-rancher-exporter:
       io.rancher.container.agent.role: environment
     user: root
     volumes:
-      - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/ca.crt:ro"
+      - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/:ro"
     entrypoint: "update-ca-certificates; /bin/rancher_exporter"
     image: infinityworks/prometheus-rancher-exporter:v0.22.52
 

@@ -13,8 +13,8 @@
     type: "string"
   - variable: "CA_CERTIFICATE"
     label: "Certificate Authority"
-    description: "Path to custom CA cert file"
-    default: ""
+    description: "Path to custom CA cert dir"
+    default: "/var/lib/rancher/etc/ssl/"
     required: false
     type: "string"
 
