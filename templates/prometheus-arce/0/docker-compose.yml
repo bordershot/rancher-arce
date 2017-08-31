@@ -72,6 +72,6 @@ prometheus-rancher-exporter:
       io.rancher.container.create_agent: true
       io.rancher.container.agent.role: environment
     volumes:
-      - "${CA_CERTIFICATE}:/usr/share/ca-certificates/mozilla/ca.crt:ro"
+      - "${CA_CERTIFICATE}:/usr/local/share/ca-certificates/ca.crt:ro"
     image: infinityworks/prometheus-rancher-exporter:v0.22.52
 
