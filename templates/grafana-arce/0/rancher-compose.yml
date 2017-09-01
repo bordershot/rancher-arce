@@ -29,12 +29,42 @@
       required: true
       default: "su2Tong2zoocie"
       type: "string"
-    - variable: "database_link"
-      label: "Database"
+#    - variable: "database_link"
+#      label: "Database"
+#      description: |
+#        Service link to the database. This will be mapped to the container as 'database'
+#      type: "service"
+#      required: false
+    - variable: "database_IP"
+      label: "Database IP address (if not service link)"
       description: |
-        Service link to the database. This will be mapped to the container as 'database'
-      type: "service"
+        External IP address to link to the database. This will be mapped to the container as 'database'
+      type: "string"
       required: false
+    - variable: database_password
+      description: "Grafana database password"
+      label: "database Password"
+      required: true
+      default: "password"
+      type: "string"
+    - variable: database_type
+      description: "Grafana database type"
+      label: "database type"
+      required: true
+      default: "mysql"
+      type: "enum"
+      options:
+      - mysql
+      - postgres
+    - variable: database_port
+      description: "Grafana database port"
+      label: "database port"
+      required: true
+      default: "3306"
+      type: "enum"
+      options:
+      - 3306
+      - 5432
     - variable: "redis_link"
       label: "Redis"
       description: |

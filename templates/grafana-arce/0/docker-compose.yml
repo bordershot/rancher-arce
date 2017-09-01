@@ -9,17 +9,19 @@ grafana:
         GF_INSTALL_PLUGINS: ${plugins}
         GF_SESSION_PROVIDER: "redis"
         GF_SESSION_PROVIDER_CONFIG: "addr=redis:6379,pool_size=100,db=grafana"
-        GF_DATABASE_TYPE: "postgres"
-        GF_DATABASE_HOST: "database:5432"
+        GF_DATABASE_TYPE: ${database_type}
+        GF_DATABASE_HOST: "database:${database_port}"
         GF_DATABASE_NAME: "grafana"
         GF_DATABASE_USER: "grafana"
-        GF_DATABASE_PASSWORD: "grafana"
+        GF_DATABASE_PASSWORD: ${database_password}
 #        GF_SERVER_PROTOCOL: ${proxy_scheme}
 #        GF_SERVER_PROTOCOL: "http"
         GF_SERVER_DOMAIN: ${proxy_name}
 #        GF_SERVER_HTTP_PORT: ${proxy_port}
     external_links:
-        - ${database_link}:database
+#        - ${database_link}:database
         - ${redis_link}:redis
+    extra_hosts:
+        - "database:${database_IP}"
 #    volumes:
 #        - ${grafana_home}:/var/lib/grafana
