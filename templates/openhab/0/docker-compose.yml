@@ -23,4 +23,4 @@ openhab:
         - "/net/tardis/sonic/rancher/openhab/userdata:/openhab/userdata"
         - "/net/tardis/sonic/rancher/openhab/addons:/openhab/addons"
         - "/net/tardis/sonic/rancher/openhab/.java:/openhab/.java"
-#    command: "./start.sh"
+    command: "./start.sh"
