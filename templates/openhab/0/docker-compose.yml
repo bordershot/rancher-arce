@@ -10,7 +10,7 @@ openhab:
         LANGUAGE: "en_US.UTF-8"
         OPENHAB_HTTP_PORT: "8080"
         OPENHAB_HTTPS_PORT: "8443"
-        USER_ID: "9001"
+#        USER_ID: "9001"
 #    external_links:
 #        - ${database_link}:database
 #        - ${redis_link}:redis
@@ -19,8 +19,8 @@ openhab:
     volumes:
         - "/etc/localtime:/etc/localtime:ro"
         - "/etc/timezone:/etc/timezone:ro"
-        - "/opt/openhab/conf:/net/tardis/sonic/rancher/openhab/conf"
-        - "/opt/openhab/userdata:/net/tardis/sonic/rancher/openhab/userdata"
-        - "/opt/openhab/addons:/net/tardis/sonic/rancher/openhab/addons"
-        - "/opt/openhab/.java:/net/tardis/sonic/rancher/openhab/.java"
+        - "/net/tardis/sonic/rancher/openhab/conf:/openhab/conf"
+        - "/net/tardis/sonic/rancher/openhab/userdata:/openhab/userdata"
+        - "/net/tardis/sonic/rancher/openhab/addons:/openhab/addons"
+        - "/net/tardis/sonic/rancher/openhab/.java:/openhab/.java"
 #    command: "./start.sh"
