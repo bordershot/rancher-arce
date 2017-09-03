@@ -1,0 +1,16 @@
+.catalog:
+  name: "OpenHAB"
+  version: "0.1"
+  description: "OpenHAB"
+  uuid: # Unique identifier to be used for upgrades. Please see note.
+  minimum_rancher_version: # The minimum version of Rancher that supports the template
+  questions: #Used to request user input for configuration options
+#    - variable: password
+#      description: "OpenHAB Password"
+#      label: "OpenHAB Password"
+#      required: false
+#      default: "redis"
+#      type: "string"
+
+openhab:
+
