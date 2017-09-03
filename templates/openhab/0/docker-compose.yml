@@ -1,5 +1,5 @@
 openhab:
-    image: openhab/openhab:latest
+    image: openhab/openhab:2.1.0-amd64
     ports:
         - 8080:8080
         - 8443:8443
