@@ -1,0 +1,4 @@
+apache:
+    image: httpd:latest
+    volumes:
+        - /net/tardis/sonic/aptrepo/apt-mirror/mirror/archive.ubuntu.com/ubuntu:/usr/local/apache2/htdocs/ubuntu
