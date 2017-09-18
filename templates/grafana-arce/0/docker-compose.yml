@@ -18,10 +18,11 @@ grafana:
 #        GF_SERVER_PROTOCOL: "http"
         GF_SERVER_DOMAIN: ${proxy_name}
 #        GF_SERVER_HTTP_PORT: ${proxy_port}
-    external_links:
+#    external_links:
 #        - ${database_link}:database
-        - ${redis_link}:redis
+#        - ${redis_link}:redis
     extra_hosts:
+        - "redis:${redis_IP}"
         - "database:${database_IP}"
 #    volumes:
 #        - ${grafana_home}:/var/lib/grafana

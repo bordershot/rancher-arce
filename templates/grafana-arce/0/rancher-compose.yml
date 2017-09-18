@@ -65,12 +65,12 @@
       options:
       - 3306
       - 5432
-    - variable: "redis_link"
+    - variable: "redis_IP"
       label: "Redis"
       description: |
         Service link to redis. This will be mapped to the container as 'redis'
-      type: "service"
-      required: false
+      type: "string"
+      required: true
     - variable: "proxy_name"
       label: "Proxy name"
       description: |
