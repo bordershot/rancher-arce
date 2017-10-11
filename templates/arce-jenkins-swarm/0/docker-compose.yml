@@ -3,6 +3,7 @@ swarm-clients:
   user: "${user}"
   labels:
     io.rancher.scheduler.global: 'true'
+    io.rancher.container.hostname_override: container_name
   external_links:
     - "${jenkins_service}:jenkins-primary"
   environment:
