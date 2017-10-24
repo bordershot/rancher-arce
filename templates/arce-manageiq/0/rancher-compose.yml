@@ -1,0 +1,5 @@
+.catalog:
+  name: "Arce-ManageIQ"
+  version: "0.1"
+  description: "ManagIQ"
+  questions:

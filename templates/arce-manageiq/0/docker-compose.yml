@@ -1,0 +1,3 @@
+manage-iq:
+    image: manageiq/manageiq:fine-3
+    privileged: true
