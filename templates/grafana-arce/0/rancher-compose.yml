@@ -100,7 +100,7 @@
         List of plugins in the format <plugin_name>,<plugin_name>
         all entries on a single line.
       default: |
-        briangann-gauge-panel,grafana-piechart-panel,jdbranham-diagram-panel,mtanda-heatmap-epoch-panel,mtanda-histogram-panel 
+        briangann-gauge-panel,grafana-piechart-panel,jdbranham-diagram-panel,mtanda-heatmap-epoch-panel,mtanda-histogram-panel,fetzerch-sunandmoon-datasource,natel-influx-admin-panel
 
 grafana:
 
