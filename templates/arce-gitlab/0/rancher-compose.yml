@@ -40,31 +40,37 @@
         - rancher-nfs
     - variable: "gitlab_gmail_username"
       description: "Gmail account for SMTP"
-      label: "Account Name:"
+      label: "Gmail Account Name:"
       required: true
       default: "username@gmail.com"
       type: "string"
     - variable: "gitlab_gmail_password"
       description: "Gmail account for SMTP"
-      label: "Password:"
+      label: "Gmail Password:"
       required: true
       default: "password"
       type: "string"
     - variable: "gitlab_postgresql_host"
       description: "Postgres server"
-      label: "Hostname:"
+      label: "Postgres Hostname:"
       required: true
       default: "postgresql.arce.lan"
       type: "string"
+    - variable: "gitlab_postgresql_database"
+      description: "Postgres database"
+      label: "Database name:"
+      required: true
+      default: "gitlabdb"
+      type: "string"
     - variable: "gitlab_postgresql_username"
       description: "DB username"
-      label: "Username:"
+      label: "DB Username:"
       required: true
       default: "gitlab"
       type: "string"
     - variable: "gitlab_postgresql_password"
       description: "DB password"
-      label: "Password:"
+      label: "DB Password:"
       required: true
       default: "password"
       type: "string"

@@ -36,6 +36,7 @@ services:
         gitlab_rails['redis_port'] = 6379
         postgresql['enable'] = false
         gitlab_rails['db_adapter'] = 'postgresql'
+        gitlab_rails['db_database'] = '${gitlab_postgresql_database}'
         gitlab_rails['db_encoding'] = 'utf8'
         gitlab_rails['db_host'] = '${gitlab_postgresql_host}'
         gitlab_rails['db_port'] = '5432'
