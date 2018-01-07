@@ -55,3 +55,4 @@ services:
           "X-Forwarded-Proto" => "https",
           "X-Forwarded-Ssl" => "on"
         }
+        unicorn['worker_processes'] = 4
