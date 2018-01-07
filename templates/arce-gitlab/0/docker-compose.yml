@@ -43,3 +43,10 @@ services:
         gitlab_rails['db_port'] = '5432'
         gitlab_rails['db_username'] = '${gitlab_postgresql_username}'
         gitlab_rails['db_password'] = '${gitlab_postgresql_password}'
+        prometheus_monitoring['enable'] = false
+        nginx['listen_port'] = 80
+        nginx['listen_https'] = false
+        nginx['proxy_set_headers'] = {
+          "X-Forwarded-Proto" => "https",
+          "X-Forwarded-Ssl" => "on"
+        }
