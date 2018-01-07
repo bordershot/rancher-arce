@@ -38,6 +38,18 @@
       options:
         - local
         - rancher-nfs
+    - variable: "gitlab_gmail_username"
+      description: "Gmail account for SMTP"
+      label: "Account Name:"
+      required: true
+      default: "username@gmail.com"
+      type: "string"
+    - variable: "gitlab_gmail_password"
+      description: "Gmail account for SMTP"
+      label: "Password:"
+      required: true
+      default: "password"
+      type: "string"
 
 gitlab-server:
   scale: 1
