@@ -12,7 +12,7 @@ services:
     labels:
       io.rancher.container.hostname_override: container_name
       xtramem: 'true'
-    image: gitlab/gitlab-ce:9.5.10-ce.0
+    image: gitlab/gitlab-ce:10.3.3-ce.0
     volumes:
       - gitlab-app-data:/var/opt/gitlab
       - gitlab-log-data:/var/log/gitlab
