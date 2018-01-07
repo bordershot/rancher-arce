@@ -50,6 +50,24 @@
       required: true
       default: "password"
       type: "string"
+    - variable: "gitlab_postgresql_host"
+      description: "Postgres server"
+      label: "Hostname:"
+      required: true
+      default: "postgresql.arce.lan"
+      type: "string"
+    - variable: "gitlab_postgresql_username"
+      description: "DB username"
+      label: "Username:"
+      required: true
+      default: "gitlab"
+      type: "string"
+    - variable: "gitlab_postgresql_password"
+      description: "DB password"
+      label: "Password:"
+      required: true
+      default: "password"
+      type: "string"
 
 gitlab-server:
   scale: 1

@@ -31,3 +31,13 @@ services:
         gitlab_rails['smtp_enable_starttls_auto'] = true
         gitlab_rails['smtp_tls'] = false
         gitlab_rails['smtp_openssl_verify_mode'] = 'peer' # Can be: 'none', 'peer', 'client_once', 'fail_if_no_peer_cert', see http://api.rubyonrails.org/classes/ActionMailer/Base.html
+        redis['enable'] = false
+        gitlab_rails['redis_host'] = 'redis.arce.lan'
+        gitlab_rails['redis_port'] = 6379
+        postgresql['enable'] = false
+        gitlab_rails['db_adapter'] = 'postgresql'
+        gitlab_rails['db_encoding'] = 'utf8'
+        gitlab_rails['db_host'] = '${gitlab_postgresql_host}'
+        gitlab_rails['db_port'] = '5432'
+        gitlab_rails['db_username'] = '${gitlab_postgresql_username}'
+        gitlab_rails['db_password'] = '${gitlab_postgresql_password}'
